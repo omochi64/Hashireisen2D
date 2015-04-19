@@ -34,12 +34,10 @@ bin 以下に生成された exe を直接実行することで起動できます。
 
 http://www.ricecake.st/game/hashireisen/manual.html
 
-## Author
-お餅 (@omochi64)
-
-ゲームについて問い合わせる際は、お餅へ直接問い合わせるか、info@ricecake.st へご連絡ください。
-
 ## License
+本ソースコードのライセンスは、修正BSDライセンスとなります (http://www.freebsd.org/ja/copyright/freebsd-license.html )。
+ただし、使用している外部のライブラリ、リソースに関しては、それらのライセンスを継承します。
+
 本作品は、上海アリス幻樂団の「東方Project」の二次創作です。
 
 また、この作品の公開にあたり、一部以下のWebサイトのフリー素材を利用させていただきました。
@@ -60,39 +58,7 @@ http://www.ricecake.st/game/hashireisen/manual.html
     * ザ・マッチメイカァズ　http://osabisi.sakura.ne.jp/m2/
     * ユウラボ8bitサウンド工房　http://www.skipmore.com/sound/
 
-
-<pre>
-「はしれーせん!!」はOgg Vorbis SDKを使用しています。
-------------------------------------------------------
-THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2007 by the Xiph.org Foundation, http://www.xiph.org/
-------------------------------------------------------
-</pre>
-
-<pre>
-「はしれーせん!! 3D 体験版3」はTinyXMLを使用しています
-------------------------------------------------------
-www.sourceforge.net/projects/tinyxml
-Original code (2.0 and earlier )copyright (c) 2000-2006 Lee Thomason (www.grinninglizard.com)
-
-This software is provided 'as-is', without any express or implied
-warranty. In no event will the authors be held liable for any
-damages arising from the use of this software.
-
-Permission is granted to anyone to use this software for any
-purpose, including commercial applications, and to alter it and
-redistribute it freely, subject to the following restrictions:
-
-1. The origin of this software must not be misrepresented; you must
-not claim that you wrote the original software. If you use this
-software in a product, an acknowledgment in the product documentation
-would be appreciated but is not required.
-
-2. Altered source versions must be plainly marked as such, and
-must not be misrepresented as being the original software.
-
-3. This notice may not be removed or altered from any source distribution.
-------------------------------------------------------
-</pre>
+その他使用しているライブラリのライセンスについては、LICENSE.txt をご覧ください。
 
 ==========
 English version.
@@ -125,12 +91,10 @@ See the manual on the web site about how to play the game.
 
 http://www.ricecake.st/game/hashireisen/manual.html
 
-## Author
-omochi (@omochi64)
-
-Contant @omochi64 or send an e-mail to info@ricecake.st if you have questions about the game.
-
 ## License
+Except for external libraries and resources, this project's source code is distirubted as BSD License (http://www.freebsd.org/ja/copyright/freebsd-license.html).
+External libraries and resources which are used in this project inherit their original license.
+
 This game is a derivative work from Toho Project by Shanghai Alice.
 
 Free materials are used in this game, which are distributed on the web sites below.
@@ -151,37 +115,4 @@ Free materials are used in this game, which are distributed on the web sites bel
     * ザ・マッチメイカァズ　http://osabisi.sakura.ne.jp/m2/
     * ユウラボ8bitサウンド工房　http://www.skipmore.com/sound/
 
-
-<pre>
-「Hashireisen !!」 uses Ogg Vorbis SDK.
-------------------------------------------------------
-THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2007 by the Xiph.org Foundation, http://www.xiph.org/
-------------------------------------------------------
-</pre>
-
-<pre>
-「Hashireisen !!」uses TinyXML.
-------------------------------------------------------
-www.sourceforge.net/projects/tinyxml
-Original code (2.0 and earlier )copyright (c) 2000-2006 Lee Thomason (www.grinninglizard.com)
-
-This software is provided 'as-is', without any express or implied
-warranty. In no event will the authors be held liable for any
-damages arising from the use of this software.
-
-Permission is granted to anyone to use this software for any
-purpose, including commercial applications, and to alter it and
-redistribute it freely, subject to the following restrictions:
-
-1. The origin of this software must not be misrepresented; you must
-not claim that you wrote the original software. If you use this
-software in a product, an acknowledgment in the product documentation
-would be appreciated but is not required.
-
-2. Altered source versions must be plainly marked as such, and
-must not be misrepresented as being the original software.
-
-3. This notice may not be removed or altered from any source
-distribution.
-------------------------------------------------------
-</pre>
+See LICENSE.txt for other license of used libraries.
