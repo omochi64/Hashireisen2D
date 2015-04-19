@@ -1,0 +1,101 @@
+FontSize=24
+StringLeft=32
+ScrollSpeed=0.666
+Music=Ending_S03_tam-n01.ogg
+BGColor=0,0,0
+TextColor=255,255,255
+StopWhenFinished=1
+
+*begin
+*wait,180
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+           はしれーせん!! クレジット
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+プログラム
+    お餅(Studio Rice Cake)
+\\
+*show,sr_banner_selene.png,80,200,40
+        http://selene-lue.halfmoon.jp/
+\\
+プログラムサポート
+    Poly(Studio Rice Cake)
+\\
+グラフィック
+    Maro(Studio Rice Cake)
+\\
+*show,sr_banner_tenseishuseki.png,80,200,40
+        http://do-t.cool.ne.jp/dots/
+\\
+    はちみつくまさん はちくま東方素材蒐
+*show,sr_banner_hachikuma.png,80,200,40
+        http://www.hachikuma.net/
+\\
+*show,sr_banner_mozukura.png,80,200,40
+        http://members.jcom.home.ne.jp/mozunatto/
+\\
+*show,sr_banner_9031com.png,80,120,60
+        http://www.9031.com/
+\\
+サウンド
+\\
+*show,sr_banner_sam_free_music.png,80,128,32
+        http://sam-free.com/
+\\
+*show,sr_banner_tam_music_factory.png,80,200,40
+        http://www.tam-music.com/
+\\
+    音の葉っぱ
+        http://www.geocities.jp/spacheeg/
+\\
+\\
+サウンドエフェクト
+\\
+*show,sr_banner_the_match_makers.png,80,200,40
+        http://osabisi.sakura.ne.jp/m2/
+\\
+*show,sr_banner_8bit_sound_koubou.png,80,200,40
+        http://www.skipmore.com/sound/
+\\
+原作
+\\
+*show,sr_banner_shanghai_alice.png,80,200,40
+        http://www16.big.or.jp/~zun/
+\\
+    本ゲームは、上海アリス幻樂団の
+    東方Projectの二次創作物です。
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+*show,hashire_small.png,64,512,128
+\\
+\\
+\\
+            THANK YOU FOR PLAYING!!
+\\
+\\
+\\
+\\
+*wait,180
+*end

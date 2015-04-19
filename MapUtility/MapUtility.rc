@@ -1,0 +1,236 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成(&N)",                    ID_CREATE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "開く(&O)",                      ID_OPEN
+        MENUITEM "保存(&S)",                      ID_SAVE
+        MENUITEM "名前をつけて保存(&A)",                ID_SAVE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&X)",                      ID_EXIT
+    END
+    POPUP "設定(&H)"
+    BEGIN
+        MENUITEM "環境設定(&S)",                    ID_SETTING
+        MENUITEM "ヘッダ設定(&H)",                   ID_SET_HEADER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONTROL_DIALOG DIALOGEX 0, 0, 418, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "マップ作成ツールコントローラ"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ADD_OBJECT,58,18,74,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BUTTON_REF_FILE,141,18,35,15
+    EDITTEXT        IDC_EDIT_OBJECT_NAME,58,38,56,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "追加",IDC_BUTTON_ADD_OBJECT,119,37,27,15
+    PUSHBUTTON      "変更",IDC_BUTTON_CHANGE_OBJECT_INFO,119,55,28,15
+    PUSHBUTTON      "削除",IDC_BUTTON_DELETE_OBJECT_FROM_LIST,149,55,27,14
+    CONTROL         "",IDC_LIST_OBJECT_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,16,73,161,153
+    PUSHBUTTON      "設置",IDC_BUTTON_SET_OBJECT,22,233,32,14
+    EDITTEXT        IDC_EDIT_POS_X,244,18,39,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_POS_X,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,272,18,11,14
+    EDITTEXT        IDC_EDIT_POS_Y,298,18,39,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_POS_Y,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,326,18,11,14
+    EDITTEXT        IDC_EDIT_POS_Z,354,18,39,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_POS_Z,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,382,18,11,14
+    EDITTEXT        IDC_EDIT_OBJECT_POS_X,244,49,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_OBJECT_POS_X,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,272,49,11,14
+    EDITTEXT        IDC_EDIT_OBJECT_POS_Y,298,49,39,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_OBJECT_POS_Y,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,326,49,11,14
+    EDITTEXT        IDC_EDIT_OBJECT_POS_Z,354,49,39,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_OBJECT_POS_Z,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,382,49,11,14
+    EDITTEXT        IDC_EDIT_SELECTED_OBJECT_ID,237,103,29,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "変更",IDC_BUTTON_CHANGE_OBJECT_ID,269,102,26,15
+    EDITTEXT        IDC_EDIT_SELECTED_OBJECT_NAME,349,103,54,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "このオブジェクトを削除",IDC_BUTTON_DELETE_OBJECT,311,123,90,14
+    LTEXT           "Object",IDC_STATIC,16,21,22,8
+    LTEXT           "Object Name",IDC_STATIC,16,40,42,8
+    GROUPBOX        "Object List",IDC_STATIC,7,7,178,248
+    GROUPBOX        "Map Controller",IDC_STATIC,192,7,219,140
+    LTEXT           "Now Pos",IDC_STATIC,200,22,28,8
+    LTEXT           "Selected Object Pos",IDC_STATIC,200,38,65,8
+    LTEXT           "Object Info",IDC_STATIC,199,92,38,8
+    LTEXT           "X",IDC_STATIC,236,20,8,8
+    LTEXT           "Y",IDC_STATIC,290,20,8,8
+    LTEXT           "Z",IDC_STATIC,346,20,8,8
+    LTEXT           "X",IDC_STATIC,236,52,8,8
+    LTEXT           "Y",IDC_STATIC,290,52,8,8
+    LTEXT           "Z",IDC_STATIC,346,52,8,8
+    LTEXT           "ObjectID",IDC_STATIC,203,106,30,8
+    LTEXT           "ObjectName",IDC_STATIC,303,105,40,8
+    PUSHBUTTON      "移動",IDC_BUTTON_MOVE_OBJECT,271,73,35,14
+    PUSHBUTTON      "元に戻す",IDC_BUTTON_RETURN_TO_OLD_POS,351,73,41,14
+    GROUPBOX        "領域設定",IDC_STATIC,192,154,219,101
+    EDITTEXT        IDC_EDIT_DIVIDE_X,262,169,26,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DIVIDE_Y,304,169,22,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_DIVIDE_Z,345,169,24,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "X",IDC_STATIC,250,172,8,8
+    LTEXT           "Y",IDC_STATIC,294,172,8,8
+    LTEXT           "Z",IDC_STATIC,333,172,8,8
+    LTEXT           "領域分割数",IDC_STATIC,199,172,41,8
+    PUSHBUTTON      "分割",IDC_BUTTON_DIVIDE_AREA,376,168,28,15
+    EDITTEXT        IDC_EDIT_NOW_DIVIDE_X,262,189,25,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NOW_DIVIDE_Y,304,189,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NOW_DIVIDE_Z,345,189,24,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "X",IDC_STATIC,250,192,8,8
+    LTEXT           "Y",IDC_STATIC,294,192,8,8
+    LTEXT           "Z",IDC_STATIC,333,192,8,8
+    LTEXT           "現在の分割数",IDC_STATIC,199,192,48,8
+    PUSHBUTTON      "複製",IDC_BUTTON_COPY_OBJECT,311,73,35,14
+    LTEXT           "ObjectDepth",IDC_STATIC,203,126,42,8
+    EDITTEXT        IDC_EDIT_OBJECT_DEPTH,250,123,54,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_SETTING DIALOGEX 0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,73,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,129,73,50,14
+    LTEXT           "ルートフォルダ名",IDC_STATIC,7,10,51,8
+    EDITTEXT        IDC_EDIT_ROUTE_FOLDER,73,7,57,13,ES_AUTOHSCROLL
+    LTEXT           "モデルデータフォルダ",IDC_STATIC,7,26,62,8
+    EDITTEXT        IDC_EDIT_MODEL_DATA_FOLDER,73,23,58,13,ES_AUTOHSCROLL
+    LTEXT           "モデルデータは",IDC_STATIC,14,39,46,8
+    LTEXT           "に置いておいてください",IDC_STATIC,15,59,69,8
+    LTEXT           "",IDC_STATIC_WHERE_TO_MODEL,23,49,70,8
+END
+
+IDD_DIALOG_SET_HEADER DIALOGEX 0, 0, 188, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ヘッダ設定"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,73,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,131,73,50,14
+    EDITTEXT        IDC_EDIT_MAP_MIN_X,23,18,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAP_MIN_Y,77,18,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAP_MIN_Z,135,18,39,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,15,20,8,8
+    LTEXT           "Y",IDC_STATIC,69,20,8,8
+    LTEXT           "Z",IDC_STATIC,125,20,8,8
+    LTEXT           "マップ座標最小値",IDC_STATIC,7,7,58,8
+    EDITTEXT        IDC_EDIT_MAP_MAX_X,23,50,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAP_MAX_Y,77,50,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAP_MAX_Z,135,50,39,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,15,53,8,8
+    LTEXT           "Y",IDC_STATIC,69,53,8,8
+    LTEXT           "Z",IDC_STATIC,125,53,8,8
+    LTEXT           "マップ座標最大値",IDC_STATIC,7,39,58,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DIALOG_SET_HEADER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

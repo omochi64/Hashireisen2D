@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FCC91E48-99A3-4A13-98FA-797DAAD062E0}</ProjectGuid>
+    <RootNamespace>3D_Primitive_Polygon</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Bin\</OutDir>
+    <IntDir>$(ProjectDir)Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)\Include;$(ProjectDir)Selene;$(ProjectDir);$(ProjectDir)src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86;$(ProjectDir)\TinyXML;$(ProjectDir)\Selene;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Bin\</OutDir>
+    <IntDir>$(ProjectDir)\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)Selene;$(DXSDK_DIR)\Include;$(ProjectDir);$(ProjectDir)src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86;$(ProjectDir)\Selene;$(ProjectDir)\TinyXML;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/3D_Primitive_Polygon.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/3D_Primitive_Polygon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>Bin/Hashireisen_d.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/3D_Primitive_Polygon_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>tinyxml.lib;tinyxml_STL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/3D_Primitive_Polygon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/3D_Primitive_Polygon.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/EHsc %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Release/3D_Primitive_Polygon.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Selene.lib;tinyxml.lib;tinyxml_STL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin/Hashireisen.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/Hashireisen.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/3D_Primitive_Polygon.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Game\BackgroundController.h" />
+    <ClInclude Include="src\Game\Bullet.h" />
+    <ClInclude Include="src\Game\Bullet2D.h" />
+    <ClInclude Include="src\Game\Bullet3D.h" />
+    <ClInclude Include="src\Game\CAnimation.h" />
+    <ClInclude Include="src\Game\CModelObject.h" />
+    <ClInclude Include="src\Game\Course.h" />
+    <ClInclude Include="src\Game\EndingScript.h" />
+    <ClInclude Include="src\Game\GunController.h" />
+    <ClInclude Include="src\Game\IObject.h" />
+    <ClInclude Include="src\Game\Map.h" />
+    <ClInclude Include="src\Game\MapIO.h" />
+    <ClInclude Include="src\Game\MenuController.h" />
+    <ClInclude Include="src\Game\MultipleAnimation3DBox.h" />
+    <ClInclude Include="src\Game\Objects.h" />
+    <ClInclude Include="src\Game\SMFObject.h" />
+    <ClInclude Include="src\Game\UdongeAnimation.h" />
+    <ClInclude Include="src\System\AllObject.h" />
+    <ClInclude Include="src\System\BasicStructure.h" />
+    <ClInclude Include="src\System\BmpLib\BmpIoLib.h" />
+    <ClInclude Include="src\System\FileManagerSupporter.h" />
+    <ClInclude Include="src\System\GameSystem.h" />
+    <ClInclude Include="src\System\GlobalNamespace.h" />
+    <ClInclude Include="src\System\IDynamicOctreeMapNode.h" />
+    <ClInclude Include="src\System\IMapObjectData.h" />
+    <ClInclude Include="src\System\IniInfo.h" />
+    <ClInclude Include="src\System\InputData.h" />
+    <ClInclude Include="src\System\IOctreeMapNode.h" />
+    <ClInclude Include="src\System\Manager\3DModelManager.h" />
+    <ClInclude Include="src\System\Manager\CModelObjectManager.h" />
+    <ClInclude Include="src\System\Manager\CoursesManager.h" />
+    <ClInclude Include="src\System\Manager\IManager.h" />
+    <ClInclude Include="src\System\Manager\MultipleAnimationManager.h" />
+    <ClInclude Include="src\System\Manager\ReplayManager.h" />
+    <ClInclude Include="src\System\Manager\SoundManager.h" />
+    <ClInclude Include="src\System\Manager\TextureManager.h" />
+    <ClInclude Include="src\System\OctreeMap.h" />
+    <ClInclude Include="src\System\Sounds.h" />
+    <ClInclude Include="src\System\TaskSystem.h" />
+    <ClInclude Include="src\Tasks\AfterGoaledTask.h" />
+    <ClInclude Include="src\Tasks\BeatenTask.h" />
+    <ClInclude Include="src\Tasks\CameraController.h" />
+    <ClInclude Include="src\Tasks\CleanGame.h" />
+    <ClInclude Include="src\Tasks\CreateBackgroundTexture.h" />
+    <ClInclude Include="src\Tasks\EndingTask.h" />
+    <ClInclude Include="src\Tasks\FirstInitialize.h" />
+    <ClInclude Include="src\Tasks\GameMain.h" />
+    <ClInclude Include="src\Tasks\GoToNextStage.h" />
+    <ClInclude Include="src\Tasks\InitializeGame.h" />
+    <ClInclude Include="src\Tasks\LoadDataBeforeGame.h" />
+    <ClInclude Include="src\Tasks\MainMenu.h" />
+    <ClInclude Include="src\Tasks\PauseChecker.h" />
+    <ClInclude Include="src\Tasks\PauseMenu.h" />
+    <ClInclude Include="src\Tasks\RecordAndCheckDemoTask.h" />
+    <ClInclude Include="src\Tasks\Renderer\Draw.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawBackgroundTask.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawEndingTask.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawGameOverTask.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawGoalMessages.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawInfoBeforeGame.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawMenu.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawStatus.h" />
+    <ClInclude Include="src\Tasks\Renderer\DrawString.h" />
+    <ClInclude Include="src\Tasks\ReplayDemoTask.h" />
+    <ClInclude Include="src\Tasks\UdongeActionConstances.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Game\Animation_2D.cpp" />
+    <ClCompile Include="src\Game\BackgroundController.cpp" />
+    <ClCompile Include="src\Game\Bullet.cpp" />
+    <ClCompile Include="src\Game\Bullet2D.cpp" />
+    <ClCompile Include="src\Game\Bullet3D.cpp" />
+    <ClCompile Include="src\Game\CAnimation.cpp" />
+    <ClCompile Include="src\Game\CModelObject.cpp" />
+    <ClCompile Include="src\Game\Course.cpp" />
+    <ClCompile Include="src\Game\EndingScript.cpp" />
+    <ClCompile Include="src\Game\GunController.cpp" />
+    <ClCompile Include="src\Game\MenuController.cpp" />
+    <ClCompile Include="src\Game\MultipleAnimation3DBox.cpp" />
+    <ClCompile Include="src\Game\Objects.cpp" />
+    <ClCompile Include="src\Game\SMFObject.cpp" />
+    <ClCompile Include="src\Game\UdongeAnimation.cpp" />
+    <ClCompile Include="src\Game\UdongeInstances.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\System\BmpLib\BmpIoLib.cpp" />
+    <ClCompile Include="src\System\FileManagerSupporter.cpp" />
+    <ClCompile Include="src\System\GameSystem.cpp" />
+    <ClCompile Include="src\System\GameSystemInstance.cpp" />
+    <ClCompile Include="src\System\IDynamicOctreeMapNode.cpp" />
+    <ClCompile Include="src\System\IMapObjectData.cpp" />
+    <ClCompile Include="src\System\InputData.cpp" />
+    <ClCompile Include="src\System\IOctreeMapNode.cpp" />
+    <ClCompile Include="src\System\Manager\3DModelManager.cpp" />
+    <ClCompile Include="src\System\Manager\CModelObjectManager.cpp" />
+    <ClCompile Include="src\System\Manager\CoursesManager.cpp" />
+    <ClCompile Include="src\System\Manager\MultipleAnimationManager.cpp" />
+    <ClCompile Include="src\System\Manager\ReplayManager.cpp" />
+    <ClCompile Include="src\System\Manager\SoundManager.cpp" />
+    <ClCompile Include="src\System\Manager\TextureManager.cpp" />
+    <ClCompile Include="src\System\ReadMapFromFile.cpp" />
+    <ClCompile Include="src\System\TaskSystem.cpp" />
+    <ClCompile Include="src\Tasks\AfterGoaledTask.cpp" />
+    <ClCompile Include="src\Tasks\BeatenTask.cpp" />
+    <ClCompile Include="src\Tasks\CameraController.cpp" />
+    <ClCompile Include="src\Tasks\CleanGame.cpp" />
+    <ClCompile Include="src\Tasks\CreateBackgoundTexture.cpp" />
+    <ClCompile Include="src\Tasks\EndingTask.cpp" />
+    <ClCompile Include="src\Tasks\FirstInitialize.cpp" />
+    <ClCompile Include="src\Tasks\GameMain.cpp" />
+    <ClCompile Include="src\Tasks\GoToNextStage.cpp" />
+    <ClCompile Include="src\Tasks\InitializeGame.cpp" />
+    <ClCompile Include="src\Tasks\LoadDataBeforeGame.cpp" />
+    <ClCompile Include="src\Tasks\MainMenu.cpp" />
+    <ClCompile Include="src\Tasks\PauseChecker.cpp" />
+    <ClCompile Include="src\Tasks\PauseMenu.cpp" />
+    <ClCompile Include="src\Tasks\RecordAndCheckDemo.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawBackgroundTask.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawEndingTask.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawGameOverTask.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawGoalMessages.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawInfoBeforeGame.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawMenu.cpp" />
+    <ClCompile Include="src\Tasks\Renderer\DrawStatus.cpp" />
+    <ClCompile Include="src\Tasks\ReplayDemoTask.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hashireisen.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+    <Image Include="icon2.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

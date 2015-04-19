@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{dd25f2ab-36ff-44af-92bb-de3bce813705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{d432751b-82fd-4bea-baef-bddabad3a89c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\SettingDialog">
+      <UniqueIdentifier>{85536141-faa7-4178-99dc-2d20319b95ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Source">
+      <UniqueIdentifier>{08efcc75-110c-4fba-a3f9-56eb9e20127a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Header">
+      <UniqueIdentifier>{20b2a20f-7ef9-4a30-89a1-4547e8994110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\SettingHeaderDialog">
+      <UniqueIdentifier>{28a03180-8a46-42a4-abf3-531ab8bbd168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin">
+      <UniqueIdentifier>{894c75aa-6f7f-4c87-ac9c-0885e7059cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Source">
+      <UniqueIdentifier>{70a9d3e2-c44d-4f7d-9e92-df4d55200acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Source\ActorWithAlpha">
+      <UniqueIdentifier>{5ee9c926-7384-422e-8930-fa668702c1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Source\Initializer">
+      <UniqueIdentifier>{6c0cdca5-ab5b-43b9-a474-8329c71d3689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Source\Data">
+      <UniqueIdentifier>{0f113ab4-5e09-4e29-bf41-089c50286731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Source\Mouse_Camera">
+      <UniqueIdentifier>{1cf78615-918b-4bc5-b076-3775b7dedbe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Header">
+      <UniqueIdentifier>{90401a1c-3de7-4246-ad62-0a2c699ced42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Header\ActorWithAlpha">
+      <UniqueIdentifier>{498bfad2-5dfd-4563-b1bf-a527f45b872a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Header\Initializer">
+      <UniqueIdentifier>{ea03c4e2-2180-4399-bc96-d2b1cf4b5ae5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Header\CommonHeader">
+      <UniqueIdentifier>{94d8775c-82f1-46db-81bd-d3b45f44499f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Header\Data">
+      <UniqueIdentifier>{71ffac90-7dd8-4597-b270-f85b49745469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWin\Header\Mouse_Camera">
+      <UniqueIdentifier>{3d02b230-a70f-48b5-a3cc-3cc2249a7474}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SettingDialog.cpp">
+      <Filter>Dialog\SettingDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonAddObject.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonChangeObject.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonChangeObjectInfo.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonCopyObject.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonDeleteObject.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonDeleteObjectFromList.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonDivideArea.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonMoveObject.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonRefFile.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonSetObject.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogProc.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GetCopyActorByID.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GetModelByID.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GetObjectForCopyByID.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="InitDialog.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuSetting.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateNowPositionInfo.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateNowSelectedObjectInfo.cpp">
+      <Filter>Dialog\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingHeaderDialog.cpp">
+      <Filter>Dialog\SettingHeaderDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="MapUtility_Main.cpp">
+      <Filter>MainWin</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateModelActor.cpp">
+      <Filter>MainWin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateModelFromFile.cpp">
+      <Filter>MainWin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingScene.cpp">
+      <Filter>MainWin\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorWithAlphaAnimation.cpp">
+      <Filter>MainWin\Source\ActorWithAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="AlphaAnimation.cpp">
+      <Filter>MainWin\Source\ActorWithAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxActorWithAlphaAnimation.cpp">
+      <Filter>MainWin\Source\ActorWithAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelWithAlphaAnimation.cpp">
+      <Filter>MainWin\Source\ActorWithAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="PointActorWithAlphaAnimation.cpp">
+      <Filter>MainWin\Source\ActorWithAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="SquarePolygonActorWithAlphaAnimation.cpp">
+      <Filter>MainWin\Source\ActorWithAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeForNowPoint.cpp">
+      <Filter>MainWin\Source\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeNowPlane.cpp">
+      <Filter>MainWin\Source\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeNowSelectedObject.cpp">
+      <Filter>MainWin\Source\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeSelene.cpp">
+      <Filter>MainWin\Source\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="InitializeUtilityData.cpp">
+      <Filter>MainWin\Source\Initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="AddActorToMap.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeAllObjectById.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteAllObjectById.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteObjectFromMap.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SetLighting.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SetNowMovingObject.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SetNowPosition.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="SetNowSelectedObject.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateVisualActors.cpp">
+      <Filter>MainWin\Source\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckKeyboardActivity.cpp">
+      <Filter>MainWin\Source\Mouse_Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckMouseActivity.cpp">
+      <Filter>MainWin\Source\Mouse_Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckSelectObject.cpp">
+      <Filter>MainWin\Source\Mouse_Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveCamera.cpp">
+      <Filter>MainWin\Source\Mouse_Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateCamera.cpp">
+      <Filter>MainWin\Source\Mouse_Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateCamera.cpp">
+      <Filter>MainWin\Source\Mouse_Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IDynamicOctreeMapNode.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IOctreeMapNode.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\ReadMapFromFile.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IMapObjectData.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\IMapObjectDataForTool.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\IOctreeMapNodeForTool.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Tools\MapIOForTool.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingDialog.h">
+      <Filter>Dialog\SettingDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonFunctions.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogProc.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GetCopyActorByID.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GetModelByID.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GetObjectForCopyByID.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="InitDialog.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuSetting.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateNowPositionInfo.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateNowSelectedObjectInfo.h">
+      <Filter>Dialog\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingHeaderDialog.h">
+      <Filter>Dialog\SettingHeaderDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateModelActor.h">
+      <Filter>MainWin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateModelFromFile.h">
+      <Filter>MainWin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingScene.h">
+      <Filter>MainWin\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorWithAlphaAnimation.h">
+      <Filter>MainWin\Header\ActorWithAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaAnimation.h">
+      <Filter>MainWin\Header\ActorWithAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxActorWithAlphaAnimation.h">
+      <Filter>MainWin\Header\ActorWithAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelWithAlphaAnimation.h">
+      <Filter>MainWin\Header\ActorWithAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="PointActorWithAlphaAnimation.h">
+      <Filter>MainWin\Header\ActorWithAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="SquarePolygonActorWithAlphaAnimation.h">
+      <Filter>MainWin\Header\ActorWithAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeForNowPoint.h">
+      <Filter>MainWin\Header\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeNowPlane.h">
+      <Filter>MainWin\Header\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeNowSelectedObject.h">
+      <Filter>MainWin\Header\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeSelene.h">
+      <Filter>MainWin\Header\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="InitializeUtilityData.h">
+      <Filter>MainWin\Header\Initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonForCamera.h">
+      <Filter>MainWin\Header\CommonHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonForData.h">
+      <Filter>MainWin\Header\CommonHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonForMainWin.h">
+      <Filter>MainWin\Header\CommonHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonForSynchronize.h">
+      <Filter>MainWin\Header\CommonHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonForVisual.h">
+      <Filter>MainWin\Header\CommonHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestForCreate.h">
+      <Filter>MainWin\Header\CommonHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="AddActorToMap.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeAllObjectById.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteAllObjectById.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteObjectFromMap.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SetLighting.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SetNowMovingObject.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SetNowPosition.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SetNowSelectedObject.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateVisualActors.h">
+      <Filter>MainWin\Header\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckKeyboardActivity.h">
+      <Filter>MainWin\Header\Mouse_Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckMouseActivity.h">
+      <Filter>MainWin\Header\Mouse_Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckSelectObject.h">
+      <Filter>MainWin\Header\Mouse_Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveCamera.h">
+      <Filter>MainWin\Header\Mouse_Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateCamera.h">
+      <Filter>MainWin\Header\Mouse_Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateCamera.h">
+      <Filter>MainWin\Header\Mouse_Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\src\System\IDynamicOctreeMapNode.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IOctreeMapNode.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IMapObjectData.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Tools\IMapObjectDataForTool.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Tools\IOctreeMapNodeForTool.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Tools\MapIOForTool.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MapUtility.rc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hashireisen", "Hashireisen.vcxproj", "{FCC91E48-99A3-4A13-98FA-797DAAD062E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Config", "KeyConfig\KeyConfig.vcxproj", "{21C19D38-32F6-402E-A716-37BC19F681DF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapUtility", "MapUtility\3D_Model_Base.vcxproj", "{18B7F140-BF3C-4588-B1EF-32C81BA090E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCC91E48-99A3-4A13-98FA-797DAAD062E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCC91E48-99A3-4A13-98FA-797DAAD062E0}.Debug|Win32.Build.0 = Debug|Win32
+		{FCC91E48-99A3-4A13-98FA-797DAAD062E0}.Release|Win32.ActiveCfg = Release|Win32
+		{FCC91E48-99A3-4A13-98FA-797DAAD062E0}.Release|Win32.Build.0 = Release|Win32
+		{21C19D38-32F6-402E-A716-37BC19F681DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21C19D38-32F6-402E-A716-37BC19F681DF}.Debug|Win32.Build.0 = Debug|Win32
+		{21C19D38-32F6-402E-A716-37BC19F681DF}.Release|Win32.ActiveCfg = Release|Win32
+		{21C19D38-32F6-402E-A716-37BC19F681DF}.Release|Win32.Build.0 = Release|Win32
+		{18B7F140-BF3C-4588-B1EF-32C81BA090E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18B7F140-BF3C-4588-B1EF-32C81BA090E2}.Debug|Win32.Build.0 = Debug|Win32
+		{18B7F140-BF3C-4588-B1EF-32C81BA090E2}.Release|Win32.ActiveCfg = Release|Win32
+		{18B7F140-BF3C-4588-B1EF-32C81BA090E2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

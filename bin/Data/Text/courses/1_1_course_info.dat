@@ -1,0 +1,4 @@
+0,0,224:normal_enemy:#ENEMY:100:LEFT
+192,0,0:flying_goahst:#FLYING_ENEMY:400:LEFT
+0,192,0:dont_fall_enemy:#DO_NOT_FALL_ENEMY:100:LEFT
+0,0,192:bounding_kedama:#BOUNDING_ENEMY:200:LEFT

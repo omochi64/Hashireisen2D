@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>MapUtility</ProjectName>
+    <ProjectGuid>{18B7F140-BF3C-4588-B1EF-32C81BA090E2}</ProjectGuid>
+    <RootNamespace>3D_Model_Base</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\Bin\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IncludePath>$(DXSDK_DIR)\Include;$(ProjectDir)..\src;$(ProjectDir)..\Selene;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86;$(ProjectDir)..\TinyXML;$(ProjectDir)..\Selene;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\Bin\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)\Include;$(ProjectDir)..\src;$(ProjectDir)..\Selene;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Lib\x86;$(ProjectDir)..\Selene;$(ProjectDir)..\TinyXML;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/3D_Model_Base.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\Debug/MapUtility.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Selene.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Bin/MapUtility_d.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/MapUtility_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/3D_Model_Base.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/3D_Model_Base.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeaderOutputFile>.\Release/MapUtility.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0411</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Selene.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Bin/MapUtility.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/MapUtility.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/3D_Model_Base.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\System\IDynamicOctreeMapNode.cpp" />
+    <ClCompile Include="..\src\System\IMapObjectData.cpp" />
+    <ClCompile Include="..\src\System\IOctreeMapNode.cpp" />
+    <ClCompile Include="..\src\System\ReadMapFromFile.cpp" />
+    <ClCompile Include="..\src\Tools\IMapObjectDataForTool.cpp" />
+    <ClCompile Include="..\src\Tools\IOctreeMapNodeForTool.cpp" />
+    <ClCompile Include="..\src\Tools\MapIOForTool.cpp" />
+    <ClCompile Include="SettingDialog.cpp" />
+    <ClCompile Include="ButtonAddObject.cpp" />
+    <ClCompile Include="ButtonChangeObject.cpp" />
+    <ClCompile Include="ButtonChangeObjectInfo.cpp" />
+    <ClCompile Include="ButtonCopyObject.cpp" />
+    <ClCompile Include="ButtonDeleteObject.cpp" />
+    <ClCompile Include="ButtonDeleteObjectFromList.cpp" />
+    <ClCompile Include="ButtonDivideArea.cpp" />
+    <ClCompile Include="ButtonMoveObject.cpp" />
+    <ClCompile Include="ButtonRefFile.cpp" />
+    <ClCompile Include="ButtonSetObject.cpp" />
+    <ClCompile Include="DialogProc.cpp" />
+    <ClCompile Include="GetCopyActorByID.cpp" />
+    <ClCompile Include="GetModelByID.cpp" />
+    <ClCompile Include="GetObjectForCopyByID.cpp" />
+    <ClCompile Include="InitDialog.cpp" />
+    <ClCompile Include="MenuSetting.cpp" />
+    <ClCompile Include="UpdateNowPositionInfo.cpp" />
+    <ClCompile Include="UpdateNowSelectedObjectInfo.cpp" />
+    <ClCompile Include="SettingHeaderDialog.cpp" />
+    <ClCompile Include="MapUtility_Main.cpp" />
+    <ClCompile Include="CreateModelActor.cpp" />
+    <ClCompile Include="CreateModelFromFile.cpp" />
+    <ClCompile Include="RenderingScene.cpp" />
+    <ClCompile Include="ActorWithAlphaAnimation.cpp" />
+    <ClCompile Include="AlphaAnimation.cpp" />
+    <ClCompile Include="BoxActorWithAlphaAnimation.cpp" />
+    <ClCompile Include="ModelWithAlphaAnimation.cpp" />
+    <ClCompile Include="PointActorWithAlphaAnimation.cpp" />
+    <ClCompile Include="SquarePolygonActorWithAlphaAnimation.cpp" />
+    <ClCompile Include="InitializeForNowPoint.cpp" />
+    <ClCompile Include="InitializeNowPlane.cpp" />
+    <ClCompile Include="InitializeNowSelectedObject.cpp" />
+    <ClCompile Include="InitializeSelene.cpp" />
+    <ClCompile Include="InitializeUtilityData.cpp" />
+    <ClCompile Include="AddActorToMap.cpp" />
+    <ClCompile Include="ChangeAllObjectById.cpp" />
+    <ClCompile Include="DeleteAllObjectById.cpp" />
+    <ClCompile Include="DeleteObjectFromMap.cpp" />
+    <ClCompile Include="SetLighting.cpp" />
+    <ClCompile Include="SetNowMovingObject.cpp" />
+    <ClCompile Include="SetNowPosition.cpp" />
+    <ClCompile Include="SetNowSelectedObject.cpp" />
+    <ClCompile Include="UpdateVisualActors.cpp" />
+    <ClCompile Include="CheckKeyboardActivity.cpp" />
+    <ClCompile Include="CheckMouseActivity.cpp" />
+    <ClCompile Include="CheckSelectObject.cpp" />
+    <ClCompile Include="MoveCamera.cpp" />
+    <ClCompile Include="RotateCamera.cpp" />
+    <ClCompile Include="UpdateCamera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\System\IDynamicOctreeMapNode.h" />
+    <ClInclude Include="..\src\System\IMapObjectData.h" />
+    <ClInclude Include="..\src\System\IOctreeMapNode.h" />
+    <ClInclude Include="..\src\Tools\IMapObjectDataForTool.h" />
+    <ClInclude Include="..\src\Tools\IOctreeMapNodeForTool.h" />
+    <ClInclude Include="..\src\Tools\MapIOForTool.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="SettingDialog.h" />
+    <ClInclude Include="ButtonFunctions.h" />
+    <ClInclude Include="DialogProc.h" />
+    <ClInclude Include="GetCopyActorByID.h" />
+    <ClInclude Include="GetModelByID.h" />
+    <ClInclude Include="GetObjectForCopyByID.h" />
+    <ClInclude Include="InitDialog.h" />
+    <ClInclude Include="MenuSetting.h" />
+    <ClInclude Include="UpdateNowPositionInfo.h" />
+    <ClInclude Include="UpdateNowSelectedObjectInfo.h" />
+    <ClInclude Include="SettingHeaderDialog.h" />
+    <ClInclude Include="CreateModelActor.h" />
+    <ClInclude Include="CreateModelFromFile.h" />
+    <ClInclude Include="RenderingScene.h" />
+    <ClInclude Include="ActorWithAlphaAnimation.h" />
+    <ClInclude Include="AlphaAnimation.h" />
+    <ClInclude Include="BoxActorWithAlphaAnimation.h" />
+    <ClInclude Include="ModelWithAlphaAnimation.h" />
+    <ClInclude Include="PointActorWithAlphaAnimation.h" />
+    <ClInclude Include="SquarePolygonActorWithAlphaAnimation.h" />
+    <ClInclude Include="InitializeForNowPoint.h" />
+    <ClInclude Include="InitializeNowPlane.h" />
+    <ClInclude Include="InitializeNowSelectedObject.h" />
+    <ClInclude Include="InitializeSelene.h" />
+    <ClInclude Include="InitializeUtilityData.h" />
+    <ClInclude Include="CommonForCamera.h" />
+    <ClInclude Include="CommonForData.h" />
+    <ClInclude Include="CommonForMainWin.h" />
+    <ClInclude Include="CommonForSynchronize.h" />
+    <ClInclude Include="CommonForVisual.h" />
+    <ClInclude Include="RequestForCreate.h" />
+    <ClInclude Include="AddActorToMap.h" />
+    <ClInclude Include="ChangeAllObjectById.h" />
+    <ClInclude Include="DeleteAllObjectById.h" />
+    <ClInclude Include="DeleteObjectFromMap.h" />
+    <ClInclude Include="SetLighting.h" />
+    <ClInclude Include="SetNowMovingObject.h" />
+    <ClInclude Include="SetNowPosition.h" />
+    <ClInclude Include="SetNowSelectedObject.h" />
+    <ClInclude Include="UpdateVisualActors.h" />
+    <ClInclude Include="CheckKeyboardActivity.h" />
+    <ClInclude Include="CheckMouseActivity.h" />
+    <ClInclude Include="CheckSelectObject.h" />
+    <ClInclude Include="MoveCamera.h" />
+    <ClInclude Include="RotateCamera.h" />
+    <ClInclude Include="UpdateCamera.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MapUtility.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

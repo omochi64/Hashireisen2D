@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="オブジェクトの名前" type="block|itemblock|enemy|etc...">
+	<model file="モデルデータ.smf" />
+	<animation name="walk">
+		<label name="walkbegin">	<!-- gotoによる移動先のラベルを定義する。動作は無し -->
+		<calllocal	name="walk" />	<!-- ローカル座標でのアニメの呼び出し -->
+		<move	<!-- 平行移動の定義。 -->
+				vx="5"			<!-- x方向速度 -->
+				vy="0"			<!-- y〃 -->
+				vz="0"			<!-- z〃 -->
+				ax="2"			<!-- x方向加速度 -->
+				ay="0"			<!-- y〃 -->
+				az="0"			<!-- z〃 -->
+				time="30" />	<!-- モーションにかける時間(frames?ms?) -->
+		<goto dest="walkbegin" />	<!-- 指定された名前のラベルへ飛ぶ -->
+	</animation>
+	<animation name="jump">
+		<calllocal name="jump_up" />
+		<move	vx="0"
+				vy="0"
+				vz="15"
+				ax="1"	
+				ay="0"
+				az="8"
+				time="10" />
+		<calllocal name="jump_down" />
+		<move	vx="0"
+				vy="0"
+				vz="-15"
+				ax="1"
+				ay="0"
+				az="-8"
+				time="10" />
+		<stop />				<!-- 停止(不要？) -->
+	</animation>
+</object>

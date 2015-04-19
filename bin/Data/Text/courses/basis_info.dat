@@ -1,0 +1,17 @@
+0,0,0:block1:#BLOCK:0
+255,0,255:center_block:#BLOCK:0
+0,255,255:left_block:#BLOCK:0
+255,255,0:right_block:#BLOCK:0
+255,0,0:udonge:#UDONGE:0
+0,255,0:goal:#GOAL:0
+0,0,255:item_block:#ITEM_BLOCK:heart_item:#HEART:1000:hard_block:#BLOCK:0
+128,0,0:broken_block:#BROKEN_BLOCK:50
+0,128,0:item_block:#ITEM_BLOCK:one_up_item:#ONE_UP:0:hard_block:#BLOCK:0
+0,0,128:item_block:#POINT_BLOCK:to_clear_point_item:#POINT:50:hard_block:#BLOCK:0
+64,0,0:koumei_block:#KOUMEI_ITEM_BLOCK:heart_item:#HEART:1000:hard_block:#BLOCK:0
+0,64,0:koumei_block:#KOUMEI_POINT_BLOCK:to_clear_point_item:#POINT:50:hard_block:#BLOCK:0
+0,0,64:point_item:#POINT:50
+32,0,0:heart_item:#HEART:1000
+0,32,0:one_up_item:#ONE_UP:0
+0,0,32:koumei_block:#KOUMEI_ITEM_BLOCK:one_up_item:#ONE_UP:0:hard_block:#BLOCK:0
+0,1,0:hahen:#BLOCK:0

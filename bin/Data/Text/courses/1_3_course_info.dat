@@ -1,0 +1,9 @@
+0,0,224:normal_yukkuri:#ENEMY:100:LEFT
+192,0,0:flying_yukkuri:#FLYING_ENEMY:400:LEFT
+0,192,0:dont_fall_enemy:#DO_NOT_FALL_ENEMY:100:LEFT
+0,0,192:bounding_yukkuri:#BOUNDING_ENEMY:200:LEFT
+ 0 ,224,224:normal_yukkuri:#ENEMY:100:RIGHT
+192,192, 0 :flying_yukkuri:#FLYING_ENEMY:400:RIGHT
+ 0 ,192,192:dont_fall_enemy:#DO_NOT_FALL_ENEMY:100:RIGHT
+192, 0 ,192:bounding_yukkuri:#BOUNDING_ENEMY:200:RIGHT
+200,200,200:background:#BACKGROUND:49

@@ -1,0 +1,7 @@
+normal_gun:
+GunAnimation=normal_gun
+Bullet=normal_bullet
+Power=1
+Pierceful=0
+MaxDist=10
+MaxBulletNum=-1

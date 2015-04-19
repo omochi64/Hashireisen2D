@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="System">
+      <UniqueIdentifier>{af417f8f-a431-4b77-9697-644b372ab1f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tasks">
+      <UniqueIdentifier>{843c7ae5-4ddd-4ec6-b982-59270f5fe12c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Manager">
+      <UniqueIdentifier>{9d34c405-00b4-432b-824d-b31c5bdfe128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tasks\Renderer">
+      <UniqueIdentifier>{8725e079-c1ea-40c5-a650-4ccff647c773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\BmpLib">
+      <UniqueIdentifier>{5b357098-6159-4800-a1a9-dad0e77d5c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{621613f1-db9d-4db2-b6e5-856620d8257e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\System\BmpLib\BmpIoLib.h">
+      <Filter>System\BmpLib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\3DModelManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\CModelObjectManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\CoursesManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\IManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\MultipleAnimationManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\ReplayManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\SoundManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Manager\TextureManager.h">
+      <Filter>System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\AllObject.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\BasicStructure.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\FileManagerSupporter.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\GameSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\GlobalNamespace.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\IDynamicOctreeMapNode.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\IMapObjectData.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\IniInfo.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\InputData.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\IOctreeMapNode.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\OctreeMap.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\Sounds.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\TaskSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Bullet2D.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\BackgroundController.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Bullet.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Bullet3D.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CAnimation.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\CModelObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Course.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\EndingScript.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\GunController.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\IObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MenuController.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MultipleAnimation3DBox.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Objects.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\SMFObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\UdongeAnimation.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\Draw.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawBackgroundTask.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawEndingTask.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawGameOverTask.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawGoalMessages.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawInfoBeforeGame.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawMenu.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawStatus.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Renderer\DrawString.h">
+      <Filter>Tasks\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\AfterGoaledTask.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\BeatenTask.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\CameraController.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\CleanGame.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\CreateBackgroundTexture.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\EndingTask.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\FirstInitialize.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\GameMain.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\GoToNextStage.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\InitializeGame.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\LoadDataBeforeGame.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\MainMenu.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\PauseChecker.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\PauseMenu.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\RecordAndCheckDemoTask.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\ReplayDemoTask.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\UdongeActionConstances.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\Map.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game\MapIO.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\System\BmpLib\BmpIoLib.cpp">
+      <Filter>System\BmpLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\3DModelManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\CModelObjectManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\CoursesManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\MultipleAnimationManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\ReplayManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\SoundManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\Manager\TextureManager.cpp">
+      <Filter>System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\FileManagerSupporter.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\GameSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\GameSystemInstance.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\IDynamicOctreeMapNode.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\IMapObjectData.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\InputData.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\IOctreeMapNode.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\ReadMapFromFile.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\TaskSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Animation_2D.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\BackgroundController.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Bullet.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Bullet2D.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Bullet3D.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\CAnimation.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\CModelObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Course.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\GunController.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\MenuController.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\MultipleAnimation3DBox.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\Objects.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\SMFObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\UdongeAnimation.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\UdongeInstances.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game\EndingScript.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawBackgroundTask.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawEndingTask.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawGameOverTask.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawGoalMessages.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawInfoBeforeGame.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawMenu.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Renderer\DrawStatus.cpp">
+      <Filter>Tasks\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\AfterGoaledTask.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\BeatenTask.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\CameraController.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\CleanGame.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\CreateBackgoundTexture.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\EndingTask.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\FirstInitialize.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\GameMain.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\GoToNextStage.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\InitializeGame.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\LoadDataBeforeGame.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\MainMenu.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\PauseChecker.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\PauseMenu.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\RecordAndCheckDemo.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\ReplayDemoTask.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Hashireisen.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon.ico" />
+    <Image Include="icon2.ico" />
+  </ItemGroup>
+</Project>

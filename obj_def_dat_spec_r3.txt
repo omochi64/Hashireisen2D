@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="オブジェクトの名前" type="block|itemblock|enemy|etc...">
+	<model file="モデルデータ.smf" />
+	<animation name="tornado-jump">
+		<label name="begin" />
+		<motion time="120">		<!-- 動きの単位。motionの子要素に記述された移動/回転は全て同時に行われる。 -->
+			<!-- 平行移動しながら回転。ただし回転は少し遅れて始まる -->
+			<move vz="30" az="10" />
+			<move rvz="40" raz="5" delay="30" />	<!-- delayに記されたflamesだけ遅れて動作を開始する。 -->
+		</motion>
+		<goto dest="begin" />
+		<motion time="120">
+			<move vz="-30" az="-10" />
+			<move rvz="-40" raz="-10" delay="30" />
+		</motion>
+		<stop />
+	</animation>
+</object>
