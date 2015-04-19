@@ -2,3 +2,12 @@ Release/
 Debug/
 
 
+/Hashireisen.ncb
+/Hashireisen.opensdf
+/Hashireisen.sdf
+/Hashireisen.suo
+/Hashireisen.v12.suo
+/bin/参考データ
+/bin/*.ilk
+/bin/*.pdb
+/bin/*.exe
