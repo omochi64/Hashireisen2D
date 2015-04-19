@@ -35,8 +35,8 @@ bin 以下に生成された exe を直接実行することで起動できます。
 http://www.ricecake.st/game/hashireisen/manual.html
 
 ## License
-本ソースコードのライセンスは、修正BSDライセンスとなります (http://www.freebsd.org/ja/copyright/freebsd-license.html )。
-ただし、使用している外部のライブラリ、リソースに関しては、それらのライセンスを継承します。
+本ソースコードのライセンスは、修正BSDライセンスとなります。
+ただし、使用している外部のライブラリ、リソースに関しては、それらのオリジナルのライセンスを継承します。
 
 本作品は、上海アリス幻樂団の「東方Project」の二次創作です。
 
@@ -58,7 +58,7 @@ http://www.ricecake.st/game/hashireisen/manual.html
     * ザ・マッチメイカァズ　http://osabisi.sakura.ne.jp/m2/
     * ユウラボ8bitサウンド工房　http://www.skipmore.com/sound/
 
-その他使用しているライブラリのライセンスについては、LICENSE.txt をご覧ください。
+その他ライセンスについては、LICENSE.txt をご覧ください。
 
 ==========
 English version.
@@ -92,7 +92,7 @@ See the manual on the web site about how to play the game.
 http://www.ricecake.st/game/hashireisen/manual.html
 
 ## License
-Except for external libraries and resources, this project's source code is distirubted as BSD License (http://www.freebsd.org/ja/copyright/freebsd-license.html).
+Except for external libraries and resources, this project's source code is distirubted as New BSD License.
 External libraries and resources which are used in this project inherit their original license.
 
 This game is a derivative work from Toho Project by Shanghai Alice.
@@ -115,4 +115,5 @@ Free materials are used in this game, which are distributed on the web sites bel
     * ザ・マッチメイカァズ　http://osabisi.sakura.ne.jp/m2/
     * ユウラボ8bitサウンド工房　http://www.skipmore.com/sound/
 
-See LICENSE.txt for other license of used libraries.
+See LICENSE.txt for license detail.
+
