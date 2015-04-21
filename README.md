@@ -92,7 +92,7 @@ See the manual on the web site about how to play the game.
 http://www.ricecake.st/game/hashireisen/manual.html
 
 ## License
-Except for external libraries and resources, this project's source code is distirubted as New BSD License.
+Except for external libraries and resources, this software is released under the New BSD License, see LICENSE.txt.
 External libraries and resources which are used in this project inherit their original license.
 
 This game is a derivative work from Toho Project by Shanghai Alice.
