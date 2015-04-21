@@ -1,7 +1,7 @@
 Hashireisen2D
 ==========
 
-※English follows below.
+※English follows after Japanese.
 
 ## Overview
 2009年に公開した、「はしれーせん!!」( http://www.ricecake.st/game/hashireisen/index.html ) のソースコードです。
